@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0693d2, #06d2c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;   
+    font-family: "Poppins" , sans-serif; 
+   
+}
+
+.container {
+    width: 60%;
+    background-color: #bddcef;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    border-radius: 10px 10px;
+    
+    
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-input {
+    width: 90%;
+    padding: 15px;
+    border: 3px solid #0693d2;
+    border-radius:5px 0 0 5px ;
+    font-size: 15px;
+}
+
+.todo-button{
+    width: 10%;
+    background-color: #0693d2;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.todo-button:hover {
+    cursor: pointer;
+    color:#0693d2 ;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.todo-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    
+}
+
+.todo-item {
+    width: 90%;
+    list-style: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius:5px 0 0 5px ;
+    font-size: 15px;
+    padding: 15px;
+
+    
+}
+
+.complete-btn, .trash-btn {
+    width: 5%;
+    border:none;
+    background-color:#a4dffb ;
+    color:#1b6e95;
+
+}
+
+.trash-btn:hover {
+    background-color: red;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.complete-btn:hover{
+    background-color: green;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fa-check,
+.fa-x {
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(40px) rotateZ(20deg);
+    opacity: 0;
+}
+
+/*.empty {
+    color :#000;
+    font-size: 20px;
+    margin: 0 auto;
+}*/
